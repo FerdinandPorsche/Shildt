@@ -1,4 +1,4 @@
-package Page331_336_exercise;
+package Page347_1;
 
 public class CircularQueue implements ICharQ{
     private char q[];

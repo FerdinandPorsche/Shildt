@@ -1,5 +1,10 @@
 package Page331_336_exercise;
 
+import Page347_1.CircularQueue;
+import Page347_1.DynQueue;
+import Page347_1.FixedQueue;
+import Page347_1.ICharQ;
+
 public class IQDemo {
     public static void main(String[] args) {
         FixedQueue fix = new FixedQueue(10);

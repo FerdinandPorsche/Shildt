@@ -2,6 +2,8 @@ package Page325_330_example;
 
 public interface Series {
     int getNext();
-    void reset();
+    default void reset(){
+        System.out.println("ERROR");
+    }
     void setStart(int x);
 }

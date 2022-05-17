@@ -1,4 +1,4 @@
-package Page331_336_exercise;
+package Page347_1;
 
 public interface ICharQ {
     void put(char ch);

@@ -1,10 +1,10 @@
-package Page331_336_exercise;
+package Page347_1;
 
-public class DynQueue implements ICharQ{
+public class FixedQueue implements ICharQ{
     private char q[];
     private int putloc, getloc;
 
-    public DynQueue(int size) {
+    public FixedQueue(int size) {
         q = new char[size];
         putloc = getloc = 0;
     }
@@ -12,18 +12,15 @@ public class DynQueue implements ICharQ{
     @Override
     public void put(char ch) {
         if (putloc == q.length) {
-            char t[] = new char[q.length *2];
-            for (int i = 0; i < q.length; i++) {
-                t[i] = q[i];
-            }
-            q = t;
+            System.out.println(" - Очередь заполнена");
+            return;
         }
         q[putloc++] = ch;
     }
 
     @Override
     public char get() {
-        if (putloc == getloc) {
+        if (getloc == putloc) {
             System.out.println(" - Очередь пуста");
             return (char) 0;
         }
